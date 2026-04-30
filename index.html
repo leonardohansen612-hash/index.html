@@ -29,13 +29,38 @@
         linear-gradient(180deg, #12051f, #08040f);
     }
 
-    .box { max-width: 900px; }
+    .box {
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
+    /* 🔥 LOGO COM GLOW */
     .logo {
-      width: 260px;
-      max-width: 85%;
-      margin-bottom: 26px;
-      filter: drop-shadow(0 12px 28px rgba(0,0,0,.55));
+      width: 420px;
+      max-width: 90%;
+      margin-bottom: 30px;
+      display: block;
+
+      filter:
+        drop-shadow(0 0 10px rgba(212,175,55,0.3))
+        drop-shadow(0 0 20px rgba(142,45,226,0.3));
+
+      animation: glow 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        filter:
+          drop-shadow(0 0 10px rgba(212,175,55,0.3))
+          drop-shadow(0 0 20px rgba(142,45,226,0.3));
+      }
+      to {
+        filter:
+          drop-shadow(0 0 20px rgba(212,175,55,0.7))
+          drop-shadow(0 0 40px rgba(142,45,226,0.6));
+      }
     }
 
     .tag {
@@ -54,6 +79,7 @@
       font-size: clamp(18px, 3vw, 26px);
       color: #ddd;
       margin-bottom: 34px;
+      max-width: 700px;
     }
 
     .buttons {
@@ -170,7 +196,6 @@
 
       <div class="tag">Pub • Drinks • Chope • Experiências</div>
 
-      <!-- LOGO -->
       <img src="logo.png" alt="Tex Pub" class="logo">
 
       <p class="subtitle">
@@ -223,35 +248,18 @@
       <div class="grid">
         <div class="card">
           <h3>🇧🇷 Rumo ao Hexa</h3>
-          <p>Revivendo a conquista do Penta, um jogo por semana. Veio com camisa do Brasil? Compra o copo P e ganha o G.</p>
+          <p>Revivendo a conquista do Penta, um jogo por semana.</p>
         </div>
 
         <div class="card">
           <h3>🧠 Quarta do Quiz</h3>
-          <p>Monte sua dupla, prove que sabe mais e concorra a R$200 para consumir no pub.</p>
+          <p>Monte sua dupla e concorra a R$200 no pub.</p>
         </div>
 
         <div class="card">
           <h3>🍃 Harmonizações</h3>
-          <p>Cervejas especiais, menus degustação e experiências criadas para quem gosta de beber com história.</p>
+          <p>Experiências com cervejas e menus especiais.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2>Destaques da casa</h2>
-
-      <p class="lead">Alguns motivos para pedir mais uma rodada.</p>
-
-      <div class="menu-list">
-        <div class="item">Negroni Amazônico</div>
-        <div class="item">Tex Lover</div>
-        <div class="item">Joaninha</div>
-        <div class="item">Coalho Crocante com Glaze de Rapadura</div>
-        <div class="item">Burgers e porções</div>
-        <div class="item">Combos especiais</div>
       </div>
     </div>
   </section>
