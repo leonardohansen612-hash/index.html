@@ -4,15 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tex Pub | Jundiaí</title>
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: Arial, sans-serif;
       background: #08040f;
       color: #fff;
       line-height: 1.5;
     }
+
     a { text-decoration: none; color: inherit; }
+
     .hero {
       min-height: 100vh;
       padding: 40px 24px;
@@ -24,7 +28,16 @@
         radial-gradient(circle at top, rgba(142, 45, 226, .35), transparent 40%),
         linear-gradient(180deg, #12051f, #08040f);
     }
+
     .box { max-width: 900px; }
+
+    .logo {
+      width: 260px;
+      max-width: 85%;
+      margin-bottom: 26px;
+      filter: drop-shadow(0 12px 28px rgba(0,0,0,.55));
+    }
+
     .tag {
       display: inline-block;
       padding: 8px 16px;
@@ -36,24 +49,20 @@
       font-size: 13px;
       text-transform: uppercase;
     }
-    h1 {
-      font-size: clamp(48px, 9vw, 110px);
-      line-height: .9;
-      margin-bottom: 20px;
-      letter-spacing: -4px;
-    }
-    h1 span { color: #d4af37; }
+
     .subtitle {
       font-size: clamp(18px, 3vw, 26px);
       color: #ddd;
       margin-bottom: 34px;
     }
+
     .buttons {
       display: flex;
       gap: 16px;
       justify-content: center;
       flex-wrap: wrap;
     }
+
     .btn {
       padding: 16px 26px;
       border-radius: 999px;
@@ -61,23 +70,32 @@
       text-transform: uppercase;
       font-size: 14px;
     }
+
     .primary { background: #d4af37; color: #140b05; }
     .secondary { border: 1px solid #fff; }
 
     section { padding: 80px 24px; }
     .container { max-width: 1100px; margin: auto; }
+
     h2 {
       font-size: clamp(34px, 5vw, 58px);
       margin-bottom: 18px;
       color: #d4af37;
     }
-    .lead { color: #ccc; font-size: 20px; max-width: 760px; margin-bottom: 40px; }
+
+    .lead {
+      color: #ccc;
+      font-size: 20px;
+      max-width: 760px;
+      margin-bottom: 40px;
+    }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
+
     .card {
       background: linear-gradient(180deg, #160a24, #0d0715);
       border: 1px solid rgba(212, 175, 55, .25);
@@ -85,6 +103,7 @@
       padding: 26px;
       min-height: 210px;
     }
+
     .card h3 { font-size: 24px; margin-bottom: 12px; }
     .card p { color: #cfcfcf; }
 
@@ -99,6 +118,7 @@
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 14px;
     }
+
     .item {
       padding: 18px;
       background: #12091d;
@@ -111,6 +131,7 @@
       background: #d4af37;
       color: #100712;
     }
+
     .cta h2 { color: #100712; }
     .cta p { color: #2b1b05; margin-bottom: 28px; }
 
@@ -134,6 +155,7 @@
       box-shadow: 0 10px 30px rgba(0,0,0,.35);
       z-index: 10;
     }
+
   </style>
 </head>
 
@@ -145,22 +167,29 @@
 
   <section class="hero">
     <div class="box">
+
       <div class="tag">Pub • Drinks • Chope • Experiências</div>
-      <h1>TEX <span>PUB</span></h1>
+
+      <!-- LOGO -->
+      <img src="logo.png" alt="Tex Pub" class="logo">
+
       <p class="subtitle">
         O melhor dia da semana começa aqui. Chope gelado, drinks autorais,
         comida de pub e noites temáticas em Jundiaí.
       </p>
+
       <div class="buttons">
         <a class="btn primary" href="https://wa.me/55SEUNUMERO" target="_blank">Reservar mesa</a>
         <a class="btn secondary" href="#agenda">Ver agenda</a>
       </div>
+
     </div>
   </section>
 
   <section>
     <div class="container">
       <h2>Mais que um pub.</h2>
+
       <p class="lead">
         Um lugar para beber bem, comer melhor e sempre ter um motivo para voltar.
         No Tex Pub, cada noite pode virar história.
@@ -171,10 +200,12 @@
           <h3>Drinks autorais</h3>
           <p>Clássicos, criações da casa e combinações pensadas para surpreender.</p>
         </div>
+
         <div class="card">
           <h3>Chope gelado</h3>
           <p>Do copo pequeno ao grande, sempre no ponto certo para acompanhar a noite.</p>
         </div>
+
         <div class="card">
           <h3>Comida de pub</h3>
           <p>Porções, burgers, pratos autorais e combinações feitas para compartilhar.</p>
@@ -186,6 +217,7 @@
   <section class="highlight" id="agenda">
     <div class="container">
       <h2>Agenda Tex</h2>
+
       <p class="lead">Eventos criados para trazer gente, energia e boas histórias.</p>
 
       <div class="grid">
@@ -193,10 +225,12 @@
           <h3>🇧🇷 Rumo ao Hexa</h3>
           <p>Revivendo a conquista do Penta, um jogo por semana. Veio com camisa do Brasil? Compra o copo P e ganha o G.</p>
         </div>
+
         <div class="card">
           <h3>🧠 Quarta do Quiz</h3>
           <p>Monte sua dupla, prove que sabe mais e concorra a R$200 para consumir no pub.</p>
         </div>
+
         <div class="card">
           <h3>🍃 Harmonizações</h3>
           <p>Cervejas especiais, menus degustação e experiências criadas para quem gosta de beber com história.</p>
@@ -208,6 +242,7 @@
   <section>
     <div class="container">
       <h2>Destaques da casa</h2>
+
       <p class="lead">Alguns motivos para pedir mais uma rodada.</p>
 
       <div class="menu-list">
@@ -224,9 +259,11 @@
   <section class="cta">
     <div class="container">
       <h2>Garanta sua mesa</h2>
+
       <p class="lead">
         Chame no WhatsApp e reserve sua próxima noite no Tex Pub.
       </p>
+
       <a class="btn secondary" href="https://wa.me/55SEUNUMERO" target="_blank">
         Reservar pelo WhatsApp
       </a>
